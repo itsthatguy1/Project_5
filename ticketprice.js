@@ -1,7 +1,7 @@
 /**
  *   @author Sean Stock (sstock6829@gmail.com)
  *   @version 0.0.1
- *   @summary Project 5 File I/O || created: 10.30.17
+ *   @summary Project 5 || created: 10.30.17
  */
 
 "use strict";
