@@ -29,7 +29,7 @@ main();
  * @desc Allows user to enter the number of passengers in their group
  * @returns numPassengers
  */
-function promptNumPassengers(){
+function promptNumPassengers() {
     const MIN_PASSENGERS = 1, MAX_PASSENGERS = 4;
     numPassengers = PROMPT.question(`\nHow many passengers are in your group? `);
     while (numPassengers < MIN_PASSENGERS || numPassengers > MAX_PASSENGERS){
@@ -43,7 +43,7 @@ function promptNumPassengers(){
  * @desc Allows the user to enter the number of zones they will cross
  * @returns zonesCrossed
  */
-function promptZonesCrossed(){
+function promptZonesCrossed() {
     const MIN_ZONES = 1, MAX_ZONES = 4;
     zonesCrossed = PROMPT.question(`\nHow many zones will you or your group travel across? `);
     while (zonesCrossed < MIN_ZONES || zonesCrossed > MAX_ZONES){
@@ -59,27 +59,27 @@ function promptZonesCrossed(){
  * @param numZonesCrossed
  */
 function setTicketPrice(){
-    for (let i = 0; i <= 3; i++){
+    for (let i = 0; i <= 3; i++) {
         ticketPrices[i] = [];
-        if (i === 0){
+        if (i === 0) {
             ticketPrices[i][0] = 7.50;
             ticketPrices[i][1] = 10.00;
             ticketPrices[i][2] = 12.00;
             ticketPrices[i][3] = 12.75;
         }
-        if (i === 1){
+        if (i === 1) {
             ticketPrices[i][0] = 14.00;
             ticketPrices[i][1] = 18.50;
             ticketPrices[i][2] = 22.00;
             ticketPrices[i][3] = 23.00;
         }
-        if (i === 2){
+        if (i === 2) {
             ticketPrices[i][0] = 20.00;
             ticketPrices[i][1] = 21.00;
             ticketPrices[i][2] = 32.00;
             ticketPrices[i][3] = 33.00;
         }
-        if (i === 3){
+        if (i === 3) {
             ticketPrices[i][0] = 25.00;
             ticketPrices[i][1] = 27.50;
             ticketPrices[i][2] = 36.00;
@@ -98,7 +98,7 @@ function setTicketPrice(){
  * @desc Displays the user's ticket price
  * @param ticketPrice
  */
-function displayTicketPrice(ticketPrice){
+function displayTicketPrice(ticketPrice) {
     process.stdout.write('\x1Bc');
     console.log(`\nYour ticket price is $${ticketPrice}`);
 }
